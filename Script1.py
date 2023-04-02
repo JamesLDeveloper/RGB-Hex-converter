@@ -10,21 +10,27 @@ def rgb_hex():
                 print invalid_entry_msg
               #  return
             else:
-                green = raw_input("Please enter an integer value for Green between 0 and 255: " )
-                if green.isdigit():
-                    green = int(green)
-                    if green <0 or green >255: #or not green.isdigit():
-                        print invalid_entry_msg
-                    #    return
-                    else:
-                        blue = raw_input("Please enter an integer value for Blue between 0 and 255: " )
-                        if blue.isdigit():
-                            blue = int(blue)
-                            if blue <0 or blue >255: #or not blue.isdigit():
-                                print invalid_entry_msg
-                         #       return
-                            else:
-                                break
+                while(True):
+                    green = raw_input("Please enter an integer value for Green between 0 and 255: " )
+                    if green.isdigit():
+                        green = int(green)
+                        if green <0 or green >255: #or not green.isdigit():
+                            print invalid_entry_msg
+                        #    return
+                        else:
+                            while (True):
+                                blue = raw_input("Please enter an integer value for Blue between 0 and 255: " )
+                                if blue.isdigit():
+                                    blue = int(blue)
+                                    if blue <0 or blue >255: #or not blue.isdigit():
+                                        print invalid_entry_msg
+                                 #       return
+                                    else:
+                                        break
+                            break
+                break
+
+
 
 
  #   val = (bin(red) << bin(16)) + (bin(green) << bin(8)) + bin(blue)
