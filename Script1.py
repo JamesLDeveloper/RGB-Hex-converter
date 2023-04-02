@@ -17,12 +17,14 @@ def rgb_hex():
                         print invalid_entry_msg
                     #    return
                     else:
-                        blue = int(raw_input("Please enter an integer value for Blue between 0 and 255: " ))
-                        if blue <0 or blue >255: #or not blue.isdigit():
-                            print invalid_entry_msg
-                     #       return
-                        else:
-                            break
+                        blue = raw_input("Please enter an integer value for Blue between 0 and 255: " )
+                        if blue.isdigit():
+                            blue = int(blue)
+                            if blue <0 or blue >255: #or not blue.isdigit():
+                                print invalid_entry_msg
+                         #       return
+                            else:
+                                break
 
 
  #   val = (bin(red) << bin(16)) + (bin(green) << bin(8)) + bin(blue)
