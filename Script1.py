@@ -64,15 +64,7 @@ def hex_rgb():
     hex_val[5] != 0 and hex_val[5] !=1 and hex_val[5] != 2 and hex_val[5] != 3 and hex_val[5] != 4 \
     and hex_val[5] != 5 and hex_val[5] != 6 and hex_val[5] != 7 and hex_val[5] != 8 and hex_val[5] != 9 \
     and hex_val[5].upper() != "A" and hex_val[5].upper() != "B" and hex_val[5].upper() != "C" and hex_val[5].upper() != "D" \
-    and hex_val[5].upper() != "E" and hex_val[5].upper() != "F" and \
-    hex_val[6] != 0 and hex_val[6] !=1 and hex_val[6] != 2 and hex_val[6] != 3 and hex_val[6] != 4 \
-    and hex_val[6] != 5 and hex_val[6] != 6 and hex_val[6] != 7 and hex_val[6] != 8 and hex_val[6] != 9 \
-    and hex_val[6].upper() != "A" and hex_val[6].upper() != "B" and hex_val[6].upper() != "C" and hex_val[6].upper() != "D" \
-    and hex_val[6].upper() != "E" and hex_val[6].upper() != "F" and \
-    hex_val[7] != 0 and hex_val[7] !=1 and hex_val[7] != 2 and hex_val[7] != 3 and hex_val[7] != 4 \
-    and hex_val[7] != 5 and hex_val[7] != 6 and hex_val[7] != 7 and hex_val[7] != 8 and hex_val[7] != 9 \
-    and hex_val[7].upper() != "A" and hex_val[7].upper() != "B" and hex_val[7].upper() != "C" and hex_val[7].upper() != "D" \
-    and hex_val[7].upper() != "E" and hex_val[7].upper() != "F":
+    and hex_val[5].upper() != "E" and hex_val[5].upper() != "F":
 
         print invalid_length_msg
         return
